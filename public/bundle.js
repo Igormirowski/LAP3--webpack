@@ -49,6 +49,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "c6ed73ce29ef8c1a1d28dd619eebc2a9.png");
 
+/***/ }),
+/* 4 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+class HelloAuguste {
+    render() {
+        const button = document.createElement('button');
+        button.textContent = 'Hello Auguste';
+        button.onclick = function () {
+            const p = document.createElement('p');
+            p.textContent = "Motning Auguste";
+        document.body.appendChild(p);     
+    }
+    
+    document.body.appendChild(button);
+}
+}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HelloAuguste);
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -144,11 +170,16 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _add_logo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _hello_auguste_hello_auguste__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+
 
 
 
 (0,_hello__WEBPACK_IMPORTED_MODULE_0__["default"])()
 ;(0,_add_logo_js__WEBPACK_IMPORTED_MODULE_1__["default"])()
+
+const btn = new _hello_auguste_hello_auguste__WEBPACK_IMPORTED_MODULE_2__["default"]()
+btn.render()
 
 })();
 
