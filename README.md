@@ -65,3 +65,5 @@ To solve issues with multiple CSS:
 
 ## USE 2 Modes (dev and prod)
 - `mv config/webpack.config{prod,.prod}.js` (changes name of file by adding dot to be compatible)
+- copy from webpack.config.js ( remember to rename mode from none)
+- Install webpack dev server `npm i -D webpack-dev-server `
