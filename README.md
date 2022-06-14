@@ -1,4 +1,8 @@
-# LAP3--webpack
+# LAP3--webpack Week 
+Practice Repo to familiarize with webpack. Building webpage with logo, button, adding css to button, when button is clicked it will print text underneath.
+
+![css loader](assets/igor.png)
+
 WEBPACK:
 - merge code into one bundle
 
@@ -28,7 +32,7 @@ STEPS:
     - `npm i style-loader --save-dev`
     -  ` add { test: /\.css$/, use: ['style-loader', 'css-loader'] }` ORDER IMPORTANT!
 
-![css loader](assets/igor.png)
+
 
 ### BALEL LOADER: (allows to deal with class properties)
 - `npm i @babel/core babel-loader @babel/preset-env @babel/plugin-proposal-class-properties --save-dev`
@@ -68,3 +72,4 @@ To solve issues with multiple CSS:
 - copy from webpack.config.js ( remember to rename mode from none)
 - Install webpack dev server `npm i -D webpack-dev-server `
 - add script  `"dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js"`
+- npm run dev (opens port 9000)
