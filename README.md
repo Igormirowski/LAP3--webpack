@@ -57,3 +57,11 @@ Every time I make change I want a new CSS file
 
 To solve issues with multiple CSS:
 - `npm i -D html-webpack-plugin`
+
+
+### Adding favicon  (2 ways)
+- 1st from index.html
+- 2nd add within plugins in webpack.config.js
+
+## USE 2 Modes (dev and prod)
+- `mv config/webpack.config{prod,.prod}.js` (changes name of file by adding dot to be compatible)
