@@ -8,7 +8,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, './public')
+        path: path.resolve(__dirname, './public'),
+        clean: true
     },
     mode: 'none',
     module: {
@@ -34,7 +35,8 @@ module.exports = {
         title: 'Auguste',
         meta: {
           description: 'Webpack lecture'
-        }
+        },
+        favicon: './src/favicon.png'
       })
   
     ]
