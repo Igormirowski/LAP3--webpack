@@ -19,7 +19,7 @@ STEPS:
 - TO INSTALL:
     - `npm i -D file-loader`
     - update webpack.config.js
-    - [rubular](https://rubular.com/
+    - [rubular](https://rubular.com/)
     
 - INSTALL CSS loader:
     - `npm install css-loader --save-dev`
@@ -34,5 +34,26 @@ STEPS:
 - `npm i @babel/core babel-loader @babel/preset-env @babel/plugin-proposal-class-properties --save-dev`
 - add rules to webpack.config.js
 
+- - [babel](https://babeljs.io/)
+
+### Playing with Plugins
+
+- `npm install terser-webpack-plugin --save-dev`
+- add require in webpack.config.js + add plugins
 
 
+- `npm i -D mini-css-extract-plugin` (we can check in package.json)
+- webpack.config.js: Require and add plugin
+- (replace style-loader with new `MiniCssExtractPlugin.loader`) --> WE LOST STYLE IN HTML --> add in html ` <link rel="stylesheet" href="./public/auguste.css">`
+
+- cache ISSUES :
+   ` plugins: [
+      new TerserPlugin(),
+      new MiniCssExtractPlugin({
+          filename: 'auguste.[contenthash].css'
+      })  ` 
+
+Every time I make change I want a new CSS file
+
+To solve issues with multiple CSS:
+- `npm i -D html-webpack-plugin`
