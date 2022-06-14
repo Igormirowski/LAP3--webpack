@@ -1,6 +1,7 @@
 import hello from './hello';
-import addLogo from './add-logo.js'
-import HelloAuguste from './hello-auguste/hello-auguste'
+import addLogo from './add-logo'
+import HelloAuguste from './hello-auguste/hello-auguste';
+
 
 hello()
 addLogo()
